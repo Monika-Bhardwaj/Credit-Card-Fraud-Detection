@@ -8,7 +8,7 @@ st.set_page_config(page_title="Credit Card Fraud Detection Dashboard", layout="w
 # Load data with caching
 @st.cache_data
 def load_data():
-    data_path = "data/creditcard.csv"
+    data_path = "https://storage.googleapis.com/download.tensorflow.org/data/creditcard.csv"
     df = pd.read_csv(data_path)
     df['TimeBin'] = (df['Time'] // 10000) * 10000  # bin by 10k seconds
     return df
