@@ -41,7 +41,7 @@
 
 ## 📸 Dashboard Preview
  
-![Dashboard Preview](https://credit-card-fraud-detection-fzzahlxj77u9vajkwwdvez.streamlit.app/)
+![Dashboard Preview](c:\Users\ASUS\AppData\Local\Packages\MicrosoftWindows.Client.Core_cw5n1h2txyewy\TempState\ScreenClip\{D75004E7-F319-48A7-AE85-A10E97E0BCE6}.png)
 
 ---
 
