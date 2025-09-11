@@ -1,109 +1,114 @@
-# 💳 Credit Card Fraud Detection   
+# 💳 Credit Card Fraud Detection Dashboard
 
-[![Streamlit](https://img.shields.io/badge/Made%20with-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)  
-[![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)](https://www.python.org/)  
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)  
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=plotly&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/Monika-Bhardwaj/Credit-Card-Fraud-Detection?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/Monika-Bhardwaj/Credit-Card-Fraud-Detection?style=for-the-badge)
 
-> 📊 An **interactive dashboard** to explore and analyze credit card transactions, detect fraud patterns, and visualize trends.  
-> Built with **Streamlit**, **Pandas**, and **Matplotlib**.  
+📊 A real-time interactive dashboard to **analyze and visualize credit card transactions** and detect fraudulent activity.
+
+🔗 **Live App:** [Click here to try it out](https://credit-card-fraud-detection-fzzahlxj77u9vajkwwdvez.streamlit.app/)  
+
+---
+
+## 🚀 Features
+
+✅ **Interactive Dashboard** built with [Streamlit](https://streamlit.io)  
+
+✅ **Filter transactions** by:
+- ⏱️ Time Range  
+- 🔍 Transaction Type (All / Legitimate / Fraudulent)  
+
+✅ **Key Metrics**
+- 📌 Total Transactions  
+- ⚠️ Fraudulent Transactions  
+- 📈 Fraud Rate (%)  
+
+✅ **Visualizations**
+- 📉 Transactions Over Time (with fraud overlay)  
+- 💰 Transaction Amount Distribution (Legit vs Fraud)  
+
+✅ **Data Export**
+- 📥 Download filtered transactions as CSV  
+
+✅ **Expandable Data Table**
+- 🔎 Explore full filtered dataset inside the app  
+
+---
+
+## 📸 Dashboard Preview
+ 
+![Dashboard Preview](https://credit-card-fraud-detection-fzzahlxj77u9vajkwwdvez.streamlit.app/)
 
 ---
 
 ## 📂 Project Structure
-credit_card_fraud_detection/
-├── data/
-│ └── creditcard.csv # Dataset (not included, download from Kaggle)
+
+credit_card_fraud_dashboard/
+├── data/ # Dataset (loaded from public URL in deployment)
 ├── dashboard/
-│ └── dashboard.py # Main Streamlit app
-├── requirements.txt # Project dependencies
+│ └── dashboard.py # Streamlit dashboard app
+├── requirements.txt # Dependencies
 └── README.md # Project documentation
 
 ---
 
-## 🚀 Features  
+## ⚙️ Installation (Run Locally)
 
-✅ **Filtering & Exploration**  
-- Filter by **time range**  
-- Select **transaction type**: All, Legitimate, Fraudulent  
-
-✅ **Metrics at a Glance**  
-- 🟦 Total Transactions  
-- 🟥 Fraud Transactions  
-- 🟨 Fraud Rate (%)  
-
-✅ **Visualizations**  
-- 📈 Transactions Over Time (line chart)  
-- 💰 Transaction Amount Distribution (histogram)  
-
-✅ **Data Interaction**  
-- Preview random **sample transactions**  
-- Expand to view **full filtered dataset**  
-
-✅ **Export Options**  
-- Download filtered transactions as **CSV**  
-
----
-
-## 🧠 Machine Learning Demo (Extension)  
-
-> As an optional extension, we train a **Logistic Regression model** to classify transactions as fraud or legitimate.  
-
-### Model Highlights  
-- **Train/Test Split** (80/20)  
-- **Logistic Regression Classifier**  
-- **Evaluation Metrics**: Accuracy, Precision, Recall, F1-score  
-- **Confusion Matrix Heatmap**  
-
-This demo shows how machine learning can be integrated into fraud detection.  
-
----
-
-## ⚙️ Installation  
-
-Clone the repository:  
-```bash
-git clone https://github.com/yourusername/credit_card_fraud_dashboard.git
-cd credit_card_fraud_dashboard
+Clone the repository:
+git clone https://github.com/Monika-Bhardwaj/Credit-Card-Fraud-Detection.git
+cd Credit-Card-Fraud-Detection
 
 Install dependencies:
 pip install -r requirements.txt
 
-▶️ Usage
-
-Run the dashboard locally:
+Run the app:
 streamlit run dashboard/dashboard.py
 
-Then open the link shown in the terminal (default: http://localhost:8501) in your browser.
+---
 
-📦 Requirements
-Listed in requirements.txt:
+🌐 Deployment
 
-streamlit
-pandas
-matplotlib
-seaborn
-scikit-learn   # (for ML demo)
+This project is deployed on Streamlit Cloud.
+To deploy your own version:
+
+Push your code to a GitHub repository.
+
+Go to [Streamlit Cloud](https://streamlit.io/cloud).
+
+Connect your GitHub repo and select dashboard/dashboard.py as the entry file.
+
+Done ✅
+
+---
 
 📊 Dataset
-This project uses the Credit Card Fraud Detection dataset available on Kaggle:
-👉 Credit Card Fraud Detection Dataset
 
-📖 Future Enhancements
-✨ Bar chart of frauds per time bin
-✨ Filters by transaction amount
-✨ Export to Excel (.xlsx) instead of CSV
-✨ Interactive plots with Plotly
-✨ Full report-style Colab Notebook
+The dataset comes from Kaggle - [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud).
 
-🙌 Acknowledgments
-Dataset: Kaggle - Credit Card Fraud Detection
+For deployment, the app loads the CSV directly from a public TensorFlow storage link:
+https://storage.googleapis.com/download.tensorflow.org/data/creditcard.csv
 
-Streamlit → for building interactive dashboards
+---
 
-Matplotlib & Seaborn → for visualizations
+🔮 Future Enhancements
 
-Scikit-learn → for ML demo
+Add ML model integration to predict fraud probability in real-time
 
+More interactive charts using Plotly
 
+Export results to Excel
 
+A report-style notebook for analysis
 
+---
+
+👩‍💻 Author
+
+Monika Bhardwaj
+🎯 Aspiring Data Analyst | Passionate about AI/ML & Data Visualization
+
+🔗 [LinkedIn](https://www.linkedin.com/in/monika-bhardwaj-50b752286/) | [GitHub](https://github.com/Monika-Bhardwaj)
